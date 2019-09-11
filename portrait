@@ -1,0 +1,165 @@
+//inspired by the free hand drawing of Vidia Anindhita editor.p5js.org/vidianindhita/sketches/
+  function setup() {
+  createCanvas(400, 400);
+}
+
+  var xPos = 190;
+  var yPos = 190;
+  var star = 10;
+
+  function draw() {
+  background(237,70,55);
+  
+  //starry night
+    noStroke();
+    fill(86, 219, 252);
+    ellipse(xPos, yPos, star, star); // star1
+    
+    xPos -= 1;
+    yPos += 1;
+    
+    noStroke();
+    fill(86, 219, 252);
+    ellipse(xPos, 40, star, star); // star2
+    
+    xPos -= 1;
+    yPos += 2;
+    
+    noStroke();
+    rect(10, 10, 5, 5);
+    rect(90, 120, 5, 5);
+    rect(200, 100, 5, 5);
+    rect(300, 60, 5, 5);
+    rect(300, 310, 5, 5);
+    rect(30, 220, 5, 5);
+  
+  
+  //colors
+	haircolour = color(67, 0, 255);
+	white = color(255, 255, 255);
+	lipcolour = color(13, 106, 49);
+
+	//body
+    strokeWeight(4);
+    stroke(51);
+
+	// face
+    fill(178, 204, 214);
+    ellipse(206, 302, 200, 300);
+
+	// eye left
+	fill(white);
+	beginShape();
+	vertex(210,265);
+	vertex(191,252);
+	vertex(174,254);
+	vertex(153,271);
+	vertex(165,270);
+	vertex(186,273);
+	vertex(199,268);
+	endShape();
+	fill(haircolour);
+	ellipse(185, 263, 20, 20);
+	fill(white);
+	ellipse(190, 263, 8, 8);
+
+	// eye right
+	fill(white);
+	beginShape();
+	vertex(249,262);
+	vertex(267,248);
+	vertex(302,261);
+	vertex(266,269);
+	endShape();
+	fill(haircolour);
+	ellipse(272, 259, 20, 20);
+	fill(white);
+	ellipse(268, 259, 8, 8);
+
+	// eyebrow left
+	fill(0, 0, 0);
+	beginShape();
+    //vertex(210,246);
+	//vertex(193,240);
+	//vertex(173,241);
+	vertex(154,250);
+	vertex(164,239);
+	vertex(179,234);
+	vertex(197,234);
+	vertex(207,237);
+	endShape();
+
+	// eyebrow right
+    strokeWeight(5);
+    beginShape();
+	vertex(243,243);
+	vertex(249,232);
+	vertex(271,229);
+	vertex(288,230);
+	vertex(299,238);
+	vertex(279,234);
+	vertex(256,236);
+	endShape();
+
+	// upper lip
+	fill(lipcolour);
+	beginShape();
+	vertex(190,343);
+	vertex(208,345);
+	vertex(247,340);
+	vertex(267,333);
+	vertex(239,330);
+	vertex(225,331);
+	endShape();
+
+	// lower lip
+	fill(lipcolour);
+	beginShape();
+	vertex(190,343);
+	vertex(213,352);
+	vertex(247,347);
+	vertex(267,333);
+	vertex(208,344);
+	endShape();
+
+
+	// nose
+    //@allison: why is there colour on the nose?
+    beginShape();
+	vertex(212,313);
+	vertex(233,316);
+	vertex(253,306);
+	endShape();
+
+	beginShape();
+	vertex(212,313);
+	vertex(221,293);
+	vertex(215,312);
+	endShape();
+
+	// hair
+	fill(haircolour);
+	beginShape();
+	vertex(267,413);
+	vertex(284,395);
+	vertex(269,452);
+	vertex(356,406);
+	vertex(338,165);
+	vertex(293,114);
+	vertex(231,92);
+    vertex(155,113);
+	vertex(118,170);
+	vertex(101,418);
+	vertex(205,432);
+	vertex(175,380);
+	vertex(152,367);
+	vertex(142,348);
+	vertex(130,264);
+  	vertex(157,240);
+	vertex(191,158);
+	vertex(201,188);
+    vertex(287,311);
+	vertex(309,334);
+	vertex(287,367);
+	endShape();
+}
